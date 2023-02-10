@@ -1,4 +1,6 @@
 (() => {
+    main();
+    
 
     function main() {
         const url = location.href;
@@ -15,7 +17,6 @@
             alert("This is not a amazon product page.");
         }
     }
-    main();
 
 
     // string -> boolean
@@ -46,7 +47,7 @@
         navigator.clipboard.writeText(text).then(() => {
             alert("Copied: " + text);
         }, () => {
-            alert("Failed");
+            alert('Address bar: ' + text);
         });
     }
 })()
